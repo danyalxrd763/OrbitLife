@@ -1,0 +1,5 @@
+.env
+orbitlife.db
+__pycache__/
+.venv/
+venv/
