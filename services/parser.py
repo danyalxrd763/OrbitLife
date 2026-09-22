@@ -51,3 +51,16 @@ CATEGORIES = {
     "продукты":"Продукты",
     "магазин":"Покупки",
 }
+def detect_category(text):
+    text = text.lower()
+
+    for word, category in CATEGORIES.items():
+        if word in text:
+            return category
+
+    return "Другое"
+
+{
+    "amount": amount,
+    "category": detect_category(text)
+}
